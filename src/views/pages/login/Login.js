@@ -55,7 +55,8 @@ class Login extends React.Component {
       // console.log(response);
 
       if (response.data === "Usuario no válido"){
-        console.log("El usuario o contraseña es invalido")
+        console.log("El usuario o contraseña es invalido");
+        alert("El usuario o contraseña es invalido");
       }
       else{
         localStorage.setItem("token", response.data);
@@ -131,8 +132,6 @@ class Login extends React.Component {
   }
 } 
 
-// const Login = () => {
- 
-// }
+
 
 export default Login
