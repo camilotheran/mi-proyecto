@@ -61,7 +61,7 @@ class Login extends React.Component {
       else{
         localStorage.setItem("token", response.data);
         localStorage.setItem("user", user);
-        window.location.href = "/#dashboard";
+        window.location.href = "/dashboard";
       }
 
     
